@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Task Manager</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login-signup.css">
+
+    <!-- Google Font - Intern -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- username taken notification -->
+    <div id="username-taken-notification" class="notification green-background">
+        <iconify-icon icon="mdi:check-circle-outline" style="color: black" width="24" height="24"></iconify-icon>
+        <p>Username is already taken</p>
+    </div>
+    
+    <!-- sign up page -->
+    <div class="row height-full" id="signup-form">
+        <div class="left-column flex flex-column items-center justify-center height-full">
+            <h1 class="welcoming-title">Hello</h1>
+            <form class="form" autocomplete="off">
+                <label for="signup-username" class="label">Username</label>
+                <input type="text" name="signup-username" id="signup-username" class="input" required>
+    
+                <label for="signup-password" class="label">Password</label>
+                <input type="password" name="signup-password" id="signup-password" class="input" required>
+    
+                <button id="signup-btn" class="button regular-button pink-background cta-btn" value="sign-up">Sign Up</button>
+            </form>
+            <p class="login-prompt">
+                Already have an account?
+                <a href="login.html" class="login-link">Login</a>
+            </p> 
+        </div>
+        <div class="right-column"></div>
+    </div>
+
+    <script src="js/signup-script.js"></script>
+</body>
+</html>

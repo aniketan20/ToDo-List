@@ -1,0 +1,86 @@
+#signup-container {
+    display: none;
+}
+
+.right-column{
+    display: none;
+}
+
+.left-column{
+    padding: var(--space-16);
+}
+
+.welcoming-title{
+    font-weight: 600;
+    font-size: var(--font-size-24);
+}
+
+.form{
+    max-width: 338px;
+}
+
+.cta-btn{
+    width: 100%;
+    margin-top: var(--space-32);
+}
+
+.login-prompt,
+.sign-up-prompt{
+    font-weight: 500;
+    font-size: var(--font-size-14);
+    margin-top: var(--space-32);
+    text-align: center;
+} 
+
+.login-link,
+.signup-link{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media(min-width: 768px) {
+    .right-column{
+        display: block;
+        border-left: 2px solid var(--black);
+        background-image: url('gears.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .row{
+        display:flex;
+    }
+
+    .left-column,
+    .right-column{
+        width: 50%;
+    }
+}
+
+.login-form{
+    display: none;
+}
+
+.notification {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    height: 80px;
+    padding: var(--space-32);
+    font-weight: 600;
+    font-size: var(--font-size-14);
+    transition-property: top;
+    transition-duration: 0.5s;
+}
+
+.notification.show{
+    top: 0;
+}
+
