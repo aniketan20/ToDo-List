@@ -39,6 +39,14 @@ const meetingTaskList = document.getElementById("meeting-list");
 const meetingTaskBoard = document.getElementById("meeting-board");
 
 function renderTasks() {
+    
+    educationTaskList.innerHTML=``;
+    shoppingTaskList.innerHTML=``;
+    meetingTaskList.innerHTML=``;
+    educationTaskBoard.innerHTML=``;
+    shoppingTaskBoard.innerHTML=``;
+    meetingTaskBoard.innerHTML=``;
+    
     tasks.forEach((task, index) => {
         let category = task.category;
         if(category=="Education"){
@@ -186,6 +194,7 @@ taskAddFrom.addEventListener("submit", function(event){
     activeOverlay.classList.add("hide");
     activeOverlay = null;
     document.getElementById("content-container").style.display="";
+    renderTasks();
 });
 renderTasks();
 
