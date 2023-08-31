@@ -13,7 +13,7 @@ checkData.addEventListener("submit", function(event) {
     if (storedUser) {
         const userData = JSON.parse(storedUser);
         if (userData.password === password) {
-            window.open("../pages/taskManager.html","_self");
+            window.open("taskManager.html","_self");
         } 
         else {
             invalidPwdNotification.classList.add("show");
