@@ -1,5 +1,12 @@
 // localStorage.clear();
 
+const signOut = document.getElementById("sign-up-cta");
+signOut.addEventListener("change" ,(event) => {
+    localStorage.clear();
+    windows.open("login.html","_self");
+}
+
+
 //For changing views
 const radioViewOptions = document.querySelectorAll("input[name='view-option']");
 const listView = document.getElementById("list-view");
