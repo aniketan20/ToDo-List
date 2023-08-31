@@ -2,7 +2,6 @@
 
 const signOut = document.getElementById("sign-out-cta");
 signOut.addEventListener("change" ,(event) => {
-    localStorage.clear();
     windows.open("login.html","_self");
 });
 
