@@ -16,7 +16,7 @@ saveData.addEventListener("submit", function(event){
     else{
         // Store user data in local storage
         localStorage.setItem(username, JSON.stringify({ username, password }));
-        window.open("../pages/login.html","_self");
+        window.open("login.html","_self");
     }
 });
 
